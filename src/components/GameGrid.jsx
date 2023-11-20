@@ -93,7 +93,6 @@ function GameGrid() {
             wins: 0,
             explosion: false,
             startTime: null,
-            totalTime: [],
             guessed: [],
             selected: [],
         });
@@ -111,7 +110,7 @@ function GameGrid() {
                     Wins : <span>{wins}</span>
                 </p>
                 <p>
-                    Best Time :{' '}
+                    Best Time : 
                     <span>
                         {totalTime && totalTime.length > 0
                             ? `${totalTime.sort((a, b) => a - b)[0].toFixed(2)} Seconds`
